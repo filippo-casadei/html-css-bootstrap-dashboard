@@ -8,3 +8,9 @@
 .navbar {
     background-color: #1f2441;
 }
+
+/* GRANDEZZA BOTTONI */
+.btn {
+    font-size: 10px;
+    
+}
