@@ -3,3 +3,8 @@
     width: 55px;
     height: 55px;
 }
+
+/* COLORE NAVBAR */
+.navbar.custom {
+    background-color: #1f2441;
+}
