@@ -54,191 +54,208 @@
         </nav>
     </header>
 
-    <main class="p-3">
-
-        <div class="banner container mt-2 pt-2 d-flex align-items-center justify-content-between">
-            <h1>Catalogo Libri</h1>
-            <button>Aggiungi Libro</button>
-        </div>
-
-        <div class="tabele-responsive">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Titolo</th>
-                        <th scope="col">Data Prestito</th>
-                        <th scope="col">Stato</th>
-                        <th scope="col">Azioni</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row">I Pilastri della Terra</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td><i class="bi bi-pencil icon"></i><i class="bi bi-trash icon"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">I Promessi Sposi</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Il Signore degli Anelli</td>
-                        <td>18/10/2023</td>
-                        <td><button type="button" class="btn btn-warning btn-sm">In prestito</button></td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Harry Potter e la Pietra Filosofale</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Il Codice Da Vinci</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-danger btn-sm text-nowrap">Non disponibile</button>
-                        </td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Shining</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">La Divina Commedia</td>
-                        <td>21/09/2023</td>
-                        <td><button type="button" class="btn btn-warning btn-sm">In prestito</button></td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Il Trono di Spade</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Il Mondo di Sofia</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-danger btn-sm text-nowrap">Non disponibile</button>
-                        </td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Le Cronache di Narnia: Il leone, la strega e l'armadio</td>
-                        <td>25/07/2023</td>
-                        <td><button type="button" class="btn btn-warning btn-sm">In prestito</button></td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Il Piccolo Principe</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td scope="row">La Storia Infinita</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="card-checkbox">
-            <div class="card my-3">
-                <div class="card-header">
-                    <h5 class="card-title">Todo</h5>
+    <main class="container p-3">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="banner container mt-2 pt-2 d-flex align-items-center justify-content-between">
+                    <h1>Catalogo Libri</h1>
+                    <button>Aggiungi Libro</button>
                 </div>
-                <div class="card-body">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                            <label class="form-check-label" for="firstCheckbox">Chiamare Segreteria</label>
-                        </li>
-                        <li class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                            <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
-                        </li>
-                        <li class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                            <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
-                        </li>
-                    </ul>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Titolo</th>
+                                <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">I Pilastri della Terra</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                                <td><i class="bi bi-pencil icon"></i><i class="bi bi-trash icon"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">I Promessi Sposi</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il Signore degli Anelli</td>
+                                <td class="d-none d-md-table-cell">18/10/2023</td>
+                                <td><button type="button" class="btn btn-warning btn-sm">In prestito</button></td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Harry Potter e la Pietra Filosofale</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il Codice Da Vinci</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><button type="button" class="btn btn-danger btn-sm text-nowrap">Non
+                                        disponibile</button>
+                                </td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Shining</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">La Divina Commedia</td>
+                                <td class="d-none d-md-table-cell">21/09/2023</td>
+                                <td><button type="button" class="btn btn-warning btn-sm">In prestito</button></td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il Trono di Spade</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il Mondo di Sofia</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><button type="button" class="btn btn-danger btn-sm text-nowrap">Non
+                                        disponibile</button>
+                                </td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Le Cronache di Narnia: Il leone, la strega e l'armadio</td>
+                                <td class="d-none d-md-table-cell">25/07/2023</td>
+                                <td><button type="button" class="btn btn-warning btn-sm">In prestito</button></td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Il Piccolo Principe</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">La Storia Infinita</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                                <td><i class="bi bi-pencil"></i><i class="bi bi-trash"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </div>
 
-
-
-
-        <div class="card-checkbox">
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="card-title">F.A.Q.</h5>
-                </div>
-
-                <div class="card-body">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    Come aggiungere un nuovo libro?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the first item’s
-                                    accordion body.</div>
-                            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card-checkbox">
+                    <div class="card my-3">
+                        <div class="card-header">
+                            <h5 class="card-title">Todo</h5>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    Come posso accedere all'anagrafica utenti?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the second item’s
-                                    accordion body. Let’s imagine this being filled with some actual content.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    Posso usare questa dashboard da mobile?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item’s
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
-                            </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Chiamare Segreteria</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                    <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti
+                                        scaduti</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                    <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
 
-            </div>
-        </div>
 
+
+                <div class="card-checkbox">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">F.A.Q.</h5>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Come aggiungere un nuovo libro?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to
+                                            demonstrate the <code>.accordion-flush</code> class. This is the first
+                                            item’s
+                                            accordion body.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Come posso accedere all'anagrafica utenti?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to
+                                            demonstrate the <code>.accordion-flush</code> class. This is the second
+                                            item’s
+                                            accordion body. Let’s imagine this being filled with some actual content.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Posso usare questa dashboard da mobile?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to
+                                            demonstrate the <code>.accordion-flush</code> class. This is the third
+                                            item’s
+                                            accordion body. Nothing more exciting happening here in terms of content,
+                                            but
+                                            just
+                                            filling up the space to make it look, at least at first glance, a bit more
+                                            representative of how this would look in a real-world application.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
 
 
