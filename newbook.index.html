@@ -64,15 +64,15 @@
         <form class="row g-3">
             <div class="col-6">
                 <label for="nomeAutore" class="form-label">Nome Autore</label>
-                <input type="text" class="form-control" id="nomeAutore" name="nomeAutore">
+                <input type="text" class="form-control" id="nomeAutore" name="nomeAutore" required>
             </div>
             <div class="col-6">
                 <label for="cognomeAutore" class="form-label">Cognome Autore</label>
-                <input type="text" class="form-control" id="cognomeAutore" name="cognomeAutore">
+                <input type="text" class="form-control" id="cognomeAutore" name="cognomeAutore" required>
             </div>
             <div class="col-12">
                 <label for="titoloLibro" class="form-label">Titolo</label>
-                <input type="text" class="form-control" id="titoloLibro" name="titolo" placeholder="Il Signore degli Anelli">
+                <input type="text" class="form-control" id="titoloLibro" name="titolo" placeholder="Il Signore degli Anelli" required>
                 <div class="form-text">Titolo versione italiana</div>
             </div>
         </form>
@@ -83,19 +83,19 @@
     <div class="container mt-4">
         <form class="row g-3">
             <div class="col-12 col-lg-4">
-                <label for="inputState" class="form-label">Genere</label>
+                <label for="inputState" class="form-label" required>Genere</label>
                     <select id="inputState" class="form-select">
-                        <option selected>Scegli il genere</option>
+                        <option value="">Scegli il genere</option>
                         <option>Abbiamo solo Fantasy</option>
                     </select>
             </div>
             <div class="col-12 col-lg-4">
                 <label for="dataPubblicazione" class="form-label">Data Pubblicazione</label>
-                <input type="date" class="form-control" id="dataPubblicazione" name="dataPubblicazione">
+                <input type="date" class="form-control" id="dataPubblicazione" name="dataPubblicazione" required>
             </div>
             <div class="col-12 col-lg-4">
                 <label for="codiceIsbn" class="form-label">ISBN#</label>
-                <input type="text" class="form-control" id="codiceIsbn" name="CodiceIsbn" placeholder="Inserisci il codice ISBN">
+                <input type="text" class="form-control" id="codiceIsbn" name="CodiceIsbn" placeholder="Inserisci il codice ISBN" required>
             </div>
         </form>
     </div>
